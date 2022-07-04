@@ -14,8 +14,15 @@
                 String Length = Console.ReadLine();
                 Console.WriteLine("What is the size of the tile? (Feet squared): ");
                 String Size = Console.ReadLine();
-                Console.WriteLine("what is the cost per tile? (€): ")
+                Console.WriteLine("what is the cost per tile? ($): ");
                 String Cost = Console.ReadLine();
+
+                decimal rWidth = (decimal.Parse(Width));
+                decimal rLength = (decimal.Parse(Length));
+                decimal tSize = (decimal.Parse(Size));
+                decimal tCost = (decimal.Parse(Cost));
+
+
             }
 
 
