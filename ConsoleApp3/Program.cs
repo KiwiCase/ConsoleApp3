@@ -25,6 +25,9 @@
                 float tSize = (float.Parse(Size));
                 float tCost = (float.Parse(Cost));
 
+                float Area = (rWidth * rLength);
+                float tNeeded = (Area / tSize);
+                float TotalCost = (tCost * tNeeded);
 
             }
 
