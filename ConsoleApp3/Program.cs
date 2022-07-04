@@ -9,26 +9,33 @@
                 Console.WriteLine("Casey's Supremely Perfect Tile Cost Calculator");
                 Console.WriteLine("");
                 Console.WriteLine("What is the width of the room? (Feet): ");
-                String Width = Console.ReadLine();
+                string width = Console.ReadLine();
                 Console.WriteLine("");
                 Console.WriteLine("What is the length of the room? (Feet): ");
-                String Length = Console.ReadLine();
+                string length = Console.ReadLine();
                 Console.WriteLine("");
                 Console.WriteLine("What is the size of the tile? (Feet squared): ");
-                String Size = Console.ReadLine();
+                string size = Console.ReadLine();
                 Console.WriteLine("");
-                Console.WriteLine("what is the cost per tile? ($): ");
-                String Cost = Console.ReadLine();
+                Console.WriteLine("What is the cost per tile? ($): ");
+                string cost = Console.ReadLine();
 
-                float rWidth = (float.Parse(Width));
-                float rLength = (float.Parse(Length));
-                float tSize = (float.Parse(Size));
-                float tCost = (float.Parse(Cost));
+                float rWidth = (float.Parse(width));
+                float rLength = (float.Parse(length));
+                float tSize = (float.Parse(size));
+                float tCost = (float.Parse(cost));
 
                 float Area = (rWidth * rLength);
                 float tNeeded = (Area / tSize);
                 float TotalCost = (tCost * tNeeded);
 
+                Console.WriteLine("");
+                Console.WriteLine("Area of Tiling = " + Area + " square feet.");
+                Console.WriteLine("Number of Tiles needed = " + tNeeded);
+                Console.WriteLine("");
+                Console.WriteLine("Total Cost = $" + TotalCost);
+                Console.ReadLine();
+                break;
             }
 
 
