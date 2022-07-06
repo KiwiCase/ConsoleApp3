@@ -14,6 +14,7 @@
                 while(!int.TryParse(rWidth, out width))
                 {
                     Console.WriteLine("Please enter a number or numbers");
+                    Console.WriteLine("What is the width of the room? (Feet): ");
                     rWidth = Console.ReadLine();
                 }              
                 Console.WriteLine("");
@@ -24,6 +25,8 @@
                 while(!int.TryParse(rLength, out length))
                 {
                     Console.WriteLine("Please enter a number or numbers");
+                    Console.WriteLine("What is the length of the room? (Feet): ");
+                    rLength = Console.ReadLine();
                 }
                 Console.WriteLine("");
 
@@ -33,14 +36,19 @@
                 while(!int.TryParse(tSize, out size))
                 {
                     Console.WriteLine("Please enter a number or numbers");
+                    Console.WriteLine("What is the size of the tile? (Feet squared): ");
+                    tSize = Console.ReadLine();
                 }
                 Console.WriteLine("");
+
                 Console.WriteLine("What is the cost per tile? ($): ");
                 var tCost = Console.ReadLine();
                 int cost;
                 while(!int.TryParse(tCost, out cost))
                 {
                     Console.WriteLine("Please enter a number or numbers");
+                    Console.WriteLine("What is the size of the tile? (Feet squared): ");
+                    tCost = Console.ReadLine();
                 }
                 Console.WriteLine("");
 
